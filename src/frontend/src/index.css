@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Warm cream palette */
+    --background: 0.928 0.03 82;
+    --foreground: 0.16 0 0;
+
+    --card: 1 0 0;
+    --card-foreground: 0.16 0 0;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.16 0 0;
+
+    --primary: 0.748 0.11 72;
+    --primary-foreground: 0.16 0 0;
+
+    --secondary: 0.868 0.04 76;
+    --secondary-foreground: 0.16 0 0;
+
+    --muted: 0.902 0.042 80;
+    --muted-foreground: 0.462 0.012 70;
+
+    --accent: 0.888 0.04 150;
+    --accent-foreground: 0.25 0.04 150;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.896 0.02 76;
+    --input: 0.977 0.015 82;
+    --ring: 0.748 0.11 72;
+
+    --header-bg: 0.902 0.042 80;
+    --sidebar-bg: 0.916 0.032 80;
+    --tag-sage: 0.888 0.04 150;
+    --tag-sand: 0.868 0.04 76;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.916 0.032 80;
+    --sidebar-foreground: 0.16 0 0;
+    --sidebar-primary: 0.748 0.11 72;
+    --sidebar-primary-foreground: 0.16 0 0;
+    --sidebar-accent: 0.902 0.042 80;
+    --sidebar-accent-foreground: 0.16 0 0;
+    --sidebar-border: 0.896 0.02 76;
+    --sidebar-ring: 0.748 0.11 72;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Fraunces", serif;
+  }
+
+  .app-vignette {
+    background: radial-gradient(
+      ellipse at center,
+      transparent 60%,
+      oklch(0.82 0.04 76 / 0.35) 100%
+    );
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+  }
+}
