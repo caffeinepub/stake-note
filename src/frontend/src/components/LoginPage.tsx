@@ -41,8 +41,9 @@ export default function LoginPage() {
           Your personal diary
         </h1>
         <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-          A warm space to capture your thoughts, moods, and memories — private
-          and secure on the Internet Computer.
+          A pure Indian app created by Jay Prajapati — your warm space to
+          capture thoughts, moods, and memories, private and secure on the
+          Internet Computer.
         </p>
 
         <Button
@@ -70,7 +71,8 @@ export default function LoginPage() {
       </motion.div>
 
       <footer className="relative z-10 mt-8 text-xs text-muted-foreground text-center">
-        &copy; {new Date().getFullYear()} Stake Note. Built with ♥ using{" "}
+        &copy; {new Date().getFullYear()} Stake Note. Built with ♥ by Jay
+        Prajapati using{" "}
         <a
           href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
           target="_blank"
