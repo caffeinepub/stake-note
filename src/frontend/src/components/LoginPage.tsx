@@ -38,7 +38,7 @@ export default function LoginPage() {
         />
 
         <h1 className="font-display text-3xl font-bold text-foreground mb-2">
-          Your personal diary
+          My personal Diary
         </h1>
         <p className="text-muted-foreground text-sm leading-relaxed mb-8">
           A pure Indian app created by Jay Prajapati — your warm space to
