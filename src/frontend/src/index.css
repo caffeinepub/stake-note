@@ -8,54 +8,54 @@
   :root {
     --radius: 0.75rem;
 
-    /* Warm cream palette */
-    --background: 0.928 0.03 82;
-    --foreground: 0.16 0 0;
+    /* Deep warm amber-terracotta palette */
+    --background: 0.945 0.038 78;
+    --foreground: 0.18 0.03 45;
 
-    --card: 1 0 0;
-    --card-foreground: 0.16 0 0;
+    --card: 0.97 0.022 78;
+    --card-foreground: 0.18 0.03 45;
 
-    --popover: 1 0 0;
-    --popover-foreground: 0.16 0 0;
+    --popover: 0.97 0.022 78;
+    --popover-foreground: 0.18 0.03 45;
 
-    --primary: 0.748 0.11 72;
-    --primary-foreground: 0.16 0 0;
+    --primary: 0.55 0.18 42;
+    --primary-foreground: 0.97 0.01 80;
 
-    --secondary: 0.868 0.04 76;
-    --secondary-foreground: 0.16 0 0;
+    --secondary: 0.84 0.07 70;
+    --secondary-foreground: 0.22 0.04 45;
 
-    --muted: 0.902 0.042 80;
-    --muted-foreground: 0.462 0.012 70;
+    --muted: 0.905 0.055 75;
+    --muted-foreground: 0.48 0.04 60;
 
-    --accent: 0.888 0.04 150;
-    --accent-foreground: 0.25 0.04 150;
+    --accent: 0.72 0.14 52;
+    --accent-foreground: 0.97 0.01 80;
 
-    --destructive: 0.577 0.245 27.325;
-    --destructive-foreground: 0.985 0 0;
+    --destructive: 0.56 0.24 25;
+    --destructive-foreground: 0.97 0 0;
 
-    --border: 0.896 0.02 76;
-    --input: 0.977 0.015 82;
-    --ring: 0.748 0.11 72;
+    --border: 0.86 0.05 70;
+    --input: 0.94 0.03 75;
+    --ring: 0.55 0.18 42;
 
-    --header-bg: 0.902 0.042 80;
-    --sidebar-bg: 0.916 0.032 80;
-    --tag-sage: 0.888 0.04 150;
-    --tag-sand: 0.868 0.04 76;
+    --header-bg: 0.905 0.055 75;
+    --sidebar-bg: 0.918 0.045 74;
+    --tag-sage: 0.84 0.06 140;
+    --tag-sand: 0.84 0.07 70;
 
-    --chart-1: 0.646 0.222 41.116;
-    --chart-2: 0.6 0.118 184.704;
-    --chart-3: 0.398 0.07 227.392;
-    --chart-4: 0.828 0.189 84.429;
-    --chart-5: 0.769 0.188 70.08;
+    --chart-1: 0.55 0.18 42;
+    --chart-2: 0.65 0.14 55;
+    --chart-3: 0.72 0.12 68;
+    --chart-4: 0.78 0.1 80;
+    --chart-5: 0.48 0.16 35;
 
-    --sidebar: 0.916 0.032 80;
-    --sidebar-foreground: 0.16 0 0;
-    --sidebar-primary: 0.748 0.11 72;
-    --sidebar-primary-foreground: 0.16 0 0;
-    --sidebar-accent: 0.902 0.042 80;
-    --sidebar-accent-foreground: 0.16 0 0;
-    --sidebar-border: 0.896 0.02 76;
-    --sidebar-ring: 0.748 0.11 72;
+    --sidebar: 0.918 0.045 74;
+    --sidebar-foreground: 0.18 0.03 45;
+    --sidebar-primary: 0.55 0.18 42;
+    --sidebar-primary-foreground: 0.97 0.01 80;
+    --sidebar-accent: 0.905 0.055 75;
+    --sidebar-accent-foreground: 0.18 0.03 45;
+    --sidebar-border: 0.86 0.05 70;
+    --sidebar-ring: 0.55 0.18 42;
   }
 
   * {
@@ -77,7 +77,7 @@
     background: radial-gradient(
       ellipse at center,
       transparent 60%,
-      oklch(0.82 0.04 76 / 0.35) 100%
+      oklch(0.8 0.07 68 / 0.3) 100%
     );
     pointer-events: none;
     position: fixed;

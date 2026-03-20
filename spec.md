@@ -1,24 +1,19 @@
 # Stake Note
 
 ## Current State
-New project with no existing application logic.
+A diary app with Internet Identity login, entry creation/editing/deletion, mood tags, and search. Backend uses authorization mixin for role-based access.
 
 ## Requested Changes (Diff)
 
 ### Add
-- Personal diary/journal app with user authentication
-- Create, read, update, delete diary entries
-- Each entry has: title, body text, date, mood tags
-- Search entries by keyword
-- Entry list sidebar + main editor view layout
+- Nothing new
 
 ### Modify
-N/A
+- Fix `getEntriesByPage` backend function: `.sort()` is called without a comparator, which causes a compile error breaking the entire backend
 
 ### Remove
-N/A
+- Nothing removed
 
 ## Implementation Plan
-1. Backend: Motoko actor with authorization, CRUD for diary entries (title, body, date, tags, owner)
-2. Frontend: Two-column layout — sidebar with entry list + search, main pane with editor
-3. Auth-gated: users only see and manage their own entries
+1. Fix `getEntriesByPage` to pass `DiaryEntry.compare` to `.sort()`
+2. Validate and deploy
